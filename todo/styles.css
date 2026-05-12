@@ -6,7 +6,7 @@
 
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #CC6600 0%, #8B4513 100%);
     min-height: 100vh;
     display: flex;
     align-items: center;
@@ -40,7 +40,7 @@ body {
 
 /* Header */
 .header {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #CC6600 0%, #8B4513 100%);
     color: white;
     padding: 40px 30px;
     text-align: center;
@@ -82,13 +82,13 @@ body {
 
 .todo-input:focus {
     outline: none;
-    border-color: #667eea;
-    box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+    border-color: #CC6600;
+    box-shadow: 0 0 0 3px rgba(204, 102, 0, 0.1);
 }
 
 .add-btn {
     padding: 12px 24px;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #CC6600 0%, #994400 100%);
     color: white;
     border: none;
     border-radius: 8px;
@@ -100,7 +100,7 @@ body {
 
 .add-btn:hover {
     transform: translateY(-2px);
-    box-shadow: 0 10px 20px rgba(102, 126, 234, 0.3);
+    box-shadow: 0 10px 20px rgba(204, 102, 0, 0.3);
 }
 
 .add-btn:active {
@@ -132,12 +132,12 @@ body {
 }
 
 .filter-btn:hover {
-    border-color: #667eea;
-    color: #667eea;
+    border-color: #CC6600;
+    color: #CC6600;
 }
 
 .filter-btn.active {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #CC6600 0%, #994400 100%);
     color: white;
     border-color: transparent;
 }
@@ -171,7 +171,7 @@ body {
 .stat-value {
     font-size: 1.8em;
     font-weight: 700;
-    color: #667eea;
+    color: #CC6600;
     margin-left: 10px;
 }
 
@@ -222,7 +222,7 @@ body {
     height: 24px;
     margin-right: 15px;
     cursor: pointer;
-    accent-color: #667eea;
+    accent-color: #CC6600;
 }
 
 .todo-content {
@@ -244,19 +244,19 @@ body {
 }
 
 .todo-text:hover {
-    background: rgba(102, 126, 234, 0.1);
+    background: rgba(204, 102, 0, 0.1);
 }
 
 .todo-text.editing {
     background: white;
-    border: 2px solid #667eea;
+    border: 2px solid #CC6600;
     padding: 5px 8px;
 }
 
 .todo-input-edit {
     flex: 1;
     padding: 8px 12px;
-    border: 2px solid #667eea;
+    border: 2px solid #CC6600;
     border-radius: 4px;
     font-size: 1em;
     font-family: inherit;
@@ -264,7 +264,7 @@ body {
 
 .todo-input-edit:focus {
     outline: none;
-    box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.2);
+    box-shadow: 0 0 0 3px rgba(204, 102, 0, 0.2);
 }
 
 .priority-badge {
@@ -349,8 +349,8 @@ body {
 }
 
 .action-btn:hover {
-    border-color: #667eea;
-    color: #667eea;
+    border-color: #CC6600;
+    color: #CC6600;
 }
 
 .danger-btn {
@@ -412,10 +412,10 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-    background: #667eea;
+    background: #CC6600;
     border-radius: 10px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: #764ba2;
+    background: #994400;
 }
