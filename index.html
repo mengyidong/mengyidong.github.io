@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dr. Mengyi Dong - Lab Website</title>
+    <title>Dr. Mengyi Dong - Virginia Tech</title>
     <style>
         * {
             margin: 0;
@@ -15,23 +15,43 @@
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             line-height: 1.6;
             color: #333;
+            background-color: #f5f5f5;
         }
 
         header {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: linear-gradient(135deg, #CC6600 0%, #8B4513 100%);
             color: white;
             padding: 80px 20px;
             text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
 
         header h1 {
             font-size: 3em;
             margin-bottom: 10px;
+            font-weight: 700;
         }
 
-        header p {
+        .subtitle {
             font-size: 1.3em;
+            opacity: 0.95;
+            margin-bottom: 5px;
+        }
+
+        .vt-affiliation {
+            font-size: 1.1em;
             opacity: 0.9;
+            margin-top: 10px;
+        }
+
+        .vt-affiliation a {
+            color: white;
+            text-decoration: underline;
+            transition: opacity 0.3s ease;
+        }
+
+        .vt-affiliation a:hover {
+            opacity: 0.8;
         }
 
         .container {
@@ -41,22 +61,47 @@
         }
 
         .intro {
-            background: #f8f9fa;
+            background: white;
             padding: 40px;
-            border-radius: 10px;
+            border-radius: 8px;
             margin-bottom: 40px;
             line-height: 1.8;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+            border-left: 5px solid #CC6600;
         }
 
         .intro h2 {
-            color: #667eea;
+            color: #CC6600;
             margin-bottom: 20px;
             font-size: 1.8em;
+            font-weight: 700;
         }
 
         .intro p {
             margin-bottom: 15px;
-            font-size: 1.1em;
+            font-size: 1.05em;
+            color: #444;
+        }
+
+        .bio-section {
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            margin-bottom: 30px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+        }
+
+        .bio-section h3 {
+            color: #CC6600;
+            margin-bottom: 15px;
+            font-size: 1.4em;
+            font-weight: 600;
+        }
+
+        .bio-section p {
+            color: #444;
+            margin-bottom: 12px;
+            line-height: 1.7;
         }
 
         .links {
@@ -69,34 +114,37 @@
         .link-card {
             background: white;
             border: 2px solid #e9ecef;
-            border-radius: 10px;
+            border-radius: 8px;
             padding: 30px;
             text-align: center;
             transition: all 0.3s ease;
             text-decoration: none;
             color: inherit;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
         }
 
         .link-card:hover {
             transform: translateY(-5px);
-            box-shadow: 0 10px 30px rgba(102, 126, 234, 0.2);
-            border-color: #667eea;
+            box-shadow: 0 8px 12px rgba(204, 102, 0, 0.15);
+            border-color: #CC6600;
         }
 
         .link-card h3 {
-            color: #667eea;
+            color: #CC6600;
             margin-bottom: 15px;
             font-size: 1.5em;
+            font-weight: 600;
         }
 
         .link-card p {
-            color: #666;
+            color: #555;
             margin-bottom: 20px;
+            font-size: 0.95em;
         }
 
         .link-card a {
             display: inline-block;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: linear-gradient(135deg, #CC6600 0%, #994400 100%);
             color: white;
             padding: 10px 25px;
             border-radius: 5px;
@@ -107,18 +155,31 @@
 
         .link-card a:hover {
             transform: scale(1.05);
+            box-shadow: 0 4px 8px rgba(204, 102, 0, 0.3);
         }
 
         footer {
             text-align: center;
             padding: 40px 20px;
-            background: #f8f9fa;
+            background: #555555;
+            color: white;
             margin-top: 60px;
-            color: #666;
         }
 
         footer p {
             margin-bottom: 10px;
+            font-size: 0.95em;
+        }
+
+        footer a {
+            color: #CC6600;
+            text-decoration: none;
+            transition: opacity 0.3s ease;
+        }
+
+        footer a:hover {
+            opacity: 0.8;
+            text-decoration: underline;
         }
 
         .coming-soon {
@@ -126,32 +187,70 @@
             font-style: italic;
             font-size: 0.9em;
         }
+
+        .vt-logo-info {
+            font-size: 0.85em;
+            margin-top: 10px;
+            opacity: 0.85;
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2em;
+            }
+
+            .subtitle {
+                font-size: 1.1em;
+            }
+
+            .links {
+                grid-template-columns: 1fr;
+            }
+        }
     </style>
 </head>
 <body>
     <header>
         <h1>Dr. Mengyi Dong</h1>
-        <p>Principal Investigator / Assistant Professor</p>
+        <p class="subtitle">Principal Investigator / Assistant Professor</p>
+        <p class="vt-affiliation">
+            Virginia Tech • 
+            <a href="https://www.arec.vaes.vt.edu/arec/virginia-seafood/people/dong-bio.html" target="_blank">View Full Bio</a>
+        </p>
     </header>
 
     <div class="container">
         <div class="intro">
             <h2>Welcome to My Lab Website</h2>
             <p>
-                This is the central hub for research, publications, and team information. 
-                I'm an Assistant Professor and Principal Investigator passionate about advancing 
-                scientific research and mentoring the next generation of scholars.
+                I am an Assistant Professor and Principal Investigator at Virginia Tech, dedicated to advancing 
+                scientific research and mentoring the next generation of scholars. My lab focuses on innovative solutions 
+                in aquaculture, seafood science, and sustainable resource management.
             </p>
             <p>
-                This website is currently under development. Below you'll find links to key resources 
-                and tools we use in the lab.
+                This website serves as a central hub for research information, lab resources, and collaborative opportunities. 
+                For more detailed information about my background and research, please visit my 
+                <a href="https://www.arec.vaes.vt.edu/arec/virginia-seafood/people/dong-bio.html" target="_blank" style="color: #CC6600; font-weight: 600;">Virginia Tech faculty profile</a>.
+            </p>
+        </div>
+
+        <div class="bio-section">
+            <h3>About My Research</h3>
+            <p>
+                My research group is committed to understanding and solving critical challenges in aquaculture and seafood science. 
+                We employ integrative approaches combining experimental research, data analysis, and stakeholder engagement to develop 
+                sustainable practices that benefit both the industry and the environment.
+            </p>
+            <p>
+                Our work addresses topics including but not limited to: aquaculture management, seafood quality and safety, 
+                sustainable production systems, and resource conservation.
             </p>
         </div>
 
         <div class="links">
             <div class="link-card">
                 <h3>📋 To-Do List</h3>
-                <p>Task management application with local storage for organizing lab projects and personal tasks.</p>
+                <p>Personal task management application with local storage for organizing research and lab projects.</p>
                 <a href="/todo/">Open To-Do App</a>
             </div>
 
@@ -189,7 +288,12 @@
 
     <footer>
         <p>&copy; 2026 Dr. Mengyi Dong. All rights reserved.</p>
-        <p><a href="https://github.com/mengyidong" style="color: #667eea; text-decoration: none;">GitHub</a></p>
+        <p>Virginia Tech | Affiliated with Department of Agricultural & Applied Economics</p>
+        <p>
+            <a href="https://www.arec.vaes.vt.edu/arec/virginia-seafood/people/dong-bio.html">Virginia Tech Profile</a> • 
+            <a href="https://github.com/mengyidong">GitHub</a>
+        </p>
+        <p class="vt-logo-info">Virginia Tech and the Hokie Bird are registered trademarks of Virginia Tech.</p>
     </footer>
 </body>
 </html>
